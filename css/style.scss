@@ -1,0 +1,192 @@
+@import "nullstyle.scss";
+$positionabs: absolute;
+
+@mixin raleway500{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+color: #898F8F;
+}
+@mixin roboto900{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 60px;
+line-height: 66px;
+text-align: center;
+text-transform: uppercase;
+color: #FFCC00;
+}
+@mixin yellowline{
+			content: '';
+			display: block;
+			position: absolute;
+			height: 1px;
+			width: 210px;
+			background: #FFCC00;
+}
+@mixin greytitle{
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 42px;
+text-transform: capitalize;
+
+color: #666666;
+}
+body{
+width: 1440px;
+height: 910px;
+}
+.container{
+width: 1170px;
+height: 757px;
+margin:121px 135px;
+	
+	.subtitle{
+		@include raleway500;
+	}
+	.title{
+		@include roboto900;
+		padding-top: 15px;
+	}
+	.img_brand{
+		text-align: center;
+		&:before{
+			@include yellowline;
+			top: 233px;
+			left: 494px;
+			
+		}
+			&:after{
+				@include yellowline;
+				top: 233px;
+				left: 737px;
+			
+		}
+	}
+	.flex_row{
+		display: flex;
+		flex-direction:row;
+		.photo{
+			padding-top: 130px;
+			padding-left: 85px;
+			.border_right_top{
+				position: $positionabs;
+				left: 205px;
+				top: 363px;
+			}
+			.border_right_bottom{
+				position: $positionabs;
+				top: 691px;
+				left: 205px;
+			}
+			.border_left_top{
+				position: $positionabs;
+				top: 363px;
+				right: 1287px;
+				
+			}
+			.border_left_bottom{
+				position: $positionabs;
+				top: 691px;
+				right: 1287px;
+			}
+		}
+		.line_vertical{
+			position: absolute;
+			height: 560px;
+			width: 1px;
+			background: #FFCC00;
+			left: 720px;
+			top: 277px;
+		}
+		.description{
+			margin-top: 120px;
+			margin-left:283px ;
+
+
+			.description_title{
+			@include greytitle;
+			&:after{
+				content: '';
+				display: block;
+				position: absolute;
+				height: 1px;
+				width: 100px;
+				background: #FFCC00;
+				margin-top: 30px;
+				margin-left: 70px;
+
+			}
+			}
+			.description_subtitle{
+				font-family: 'Raleway';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 24px;
+				line-height: 36px;
+				text-transform: capitalize;
+				color: #666666;
+				margin-top: 60px;
+			}
+			.flex_social{
+				display: flex;
+				flex-direction:row;
+				margin-top: 30px;
+				margin-left:60px;
+				gap:5px;
+			}
+			.description_text{
+				position: absolute;
+				font-family: 'Raleway';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 24px;
+				text-align: center;
+				color: #333333;
+				top: 610px;
+				left: 805px;
+			}
+			.description_decore{
+				text-align: center;
+				margin-top: 185px;
+			}
+			.description_link{
+				width: 118px;
+				height: 24px;
+				border: 1px solid #FFCC00;
+				padding: 5px 7px;
+				margin-top: 20px;
+				margin-left: 54px;
+					a{
+						font-family: 'Open Sans';
+						font-style: normal;
+						font-weight: 700;
+						font-size: 14px;
+						line-height: 14px;
+						text-align: center;
+						text-transform: uppercase;
+						color: #666666;
+			}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

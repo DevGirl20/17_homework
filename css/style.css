@@ -1,0 +1,422 @@
+* {
+		padding: 0;
+		margin: 0;
+		border: 0;
+}
+
+*, *:before, *:after {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+}
+
+:focus, :active {
+		outline: none;
+}
+
+a:focus, a:active {
+		outline: none;
+}
+
+nav, footer, header, aside {
+		display: block;
+}
+
+html, body {
+		height: 100%;
+		width: 100%;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 14px;
+		-ms-text-size-adjust: 100%;
+		-moz-text-size-adjust: 100%;
+		-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+		font-family: inherit;
+}
+
+input::-ms-clear {
+		display: none;
+}
+
+button {
+		cursor: pointer;
+}
+
+button::-moz-focus-inner {
+		padding: 0;
+		border: 0;
+}
+
+a, a:visited {
+		text-decoration: none;
+}
+
+a:hover {
+		text-decoration: none;
+}
+
+ul li {
+		list-style: none;
+}
+
+img {
+		vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+		font-size: inherit;
+		font-weight: 400;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+body {
+		width: 1440px;
+		height: 910px;
+}
+
+.container {
+		width: 1170px;
+		height: 757px;
+		margin: 121px 135px;
+}
+.container .subtitle {
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 24px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #898F8F;
+}
+.container .title {
+		font-family: "Roboto";
+		font-style: normal;
+		font-weight: 900;
+		font-size: 60px;
+		line-height: 66px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFCC00;
+		padding-top: 15px;
+}
+.container .img_brand {
+		text-align: center;
+}
+.container .img_brand:before {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 1px;
+		width: 210px;
+		background: #FFCC00;
+		top: 233px;
+		left: 494px;
+}
+.container .img_brand:after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 1px;
+		width: 210px;
+		background: #FFCC00;
+		top: 233px;
+		left: 737px;
+}
+.container .flex_row {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+}
+.container .flex_row .photo {
+		padding-top: 130px;
+		padding-left: 85px;
+}
+.container .flex_row .photo .border_right_top {
+		position: absolute;
+		left: 205px;
+		top: 363px;
+}
+.container .flex_row .photo .border_right_bottom {
+		position: absolute;
+		top: 691px;
+		left: 205px;
+}
+.container .flex_row .photo .border_left_top {
+		position: absolute;
+		top: 363px;
+		right: 1287px;
+}
+.container .flex_row .photo .border_left_bottom {
+		position: absolute;
+		top: 691px;
+		right: 1287px;
+}
+.container .flex_row .line_vertical {
+		position: absolute;
+		height: 560px;
+		width: 1px;
+		background: #FFCC00;
+		left: 720px;
+		top: 277px;
+}
+.container .flex_row .description {
+		margin-top: 120px;
+		margin-left: 283px;
+}
+.container .flex_row .description .description_title {
+		font-family: "Roboto";
+		font-style: normal;
+		font-weight: 900;
+		font-size: 36px;
+		line-height: 42px;
+		text-transform: capitalize;
+		color: #666666;
+}
+.container .flex_row .description .description_title:after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 1px;
+		width: 100px;
+		background: #FFCC00;
+		margin-top: 30px;
+		margin-left: 70px;
+}
+.container .flex_row .description .description_subtitle {
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 36px;
+		text-transform: capitalize;
+		color: #666666;
+		margin-top: 60px;
+}
+.container .flex_row .description .flex_social {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		margin-top: 30px;
+		margin-left: 60px;
+		gap: 5px;
+}
+.container .flex_row .description .description_text {
+		position: absolute;
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: center;
+		color: #333333;
+		top: 610px;
+		left: 805px;
+}
+.container .flex_row .description .description_decore {
+		text-align: center;
+		margin-top: 185px;
+}
+.container .flex_row .description .description_link {
+		width: 118px;
+		height: 24px;
+		border: 1px solid #FFCC00;
+		padding: 5px 7px;
+		margin-top: 20px;
+		margin-left: 54px;
+}
+.container .flex_row .description .description_link a {
+		font-family: "Open Sans";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 14px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #666666;
+}
+
+body {
+		width: 1440px;
+		height: 910px;
+}
+
+.container {
+		width: 1170px;
+		height: 757px;
+		margin: 121px 135px;
+}
+.container .subtitle {
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 24px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #898F8F;
+}
+.container .title {
+		font-family: "Roboto";
+		font-style: normal;
+		font-weight: 900;
+		font-size: 60px;
+		line-height: 66px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFCC00;
+		padding-top: 15px;
+}
+.container .img_brand {
+		text-align: center;
+}
+.container .img_brand:before {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 1px;
+		width: 210px;
+		background: #FFCC00;
+		top: 233px;
+		left: 494px;
+}
+.container .img_brand:after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 1px;
+		width: 210px;
+		background: #FFCC00;
+		top: 233px;
+		left: 737px;
+}
+.container .flex_row {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+}
+.container .flex_row .photo {
+		padding-top: 130px;
+		padding-left: 85px;
+}
+.container .flex_row .photo .border_right_top {
+		position: absolute;
+		left: 205px;
+		top: 363px;
+}
+.container .flex_row .photo .border_right_bottom {
+		position: absolute;
+		top: 691px;
+		left: 205px;
+}
+.container .flex_row .photo .border_left_top {
+		position: absolute;
+		top: 363px;
+		right: 1287px;
+}
+.container .flex_row .photo .border_left_bottom {
+		position: absolute;
+		top: 691px;
+		right: 1287px;
+}
+.container .flex_row .line_vertical {
+		position: absolute;
+		height: 560px;
+		width: 1px;
+		background: #FFCC00;
+		left: 720px;
+		top: 277px;
+}
+.container .flex_row .description {
+		margin-top: 120px;
+		margin-left: 283px;
+}
+.container .flex_row .description .description_title {
+		font-family: "Roboto";
+		font-style: normal;
+		font-weight: 900;
+		font-size: 36px;
+		line-height: 42px;
+		text-transform: capitalize;
+		color: #666666;
+}
+.container .flex_row .description .description_title:after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 1px;
+		width: 100px;
+		background: #FFCC00;
+		margin-top: 30px;
+		margin-left: 70px;
+}
+.container .flex_row .description .description_subtitle {
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 36px;
+		text-transform: capitalize;
+		color: #666666;
+		margin-top: 60px;
+}
+.container .flex_row .description .flex_social {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		margin-top: 30px;
+		margin-left: 60px;
+		gap: 5px;
+}
+.container .flex_row .description .description_text {
+		position: absolute;
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: center;
+		color: #333333;
+		top: 610px;
+		left: 805px;
+}
+.container .flex_row .description .description_decore {
+		text-align: center;
+		margin-top: 185px;
+}
+.container .flex_row .description .description_link {
+		width: 118px;
+		height: 24px;
+		border: 1px solid #FFCC00;
+		padding: 5px 7px;
+		margin-top: 20px;
+		margin-left: 54px;
+}
+.container .flex_row .description .description_link a {
+		font-family: "Open Sans";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 14px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #666666;
+}
